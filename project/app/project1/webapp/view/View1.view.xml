@@ -1,0 +1,49 @@
+<mvc:View controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+
+    <Table id="myTable" 
+      visible="true" 
+      width="100%" 
+        items="{
+        path: '/leave'
+        }">
+        <columns>
+            <Column>
+            <Text text='comments'></Text>
+            </Column>
+            <Column>
+            <Text text='type'></Text>
+            </Column>
+            <Column >
+            <Text text="leave status"></Text>
+            </Column>
+            <Column >
+            <Text text="ID"></Text>
+            </Column>
+            <Column >
+            <Text text="employee id"></Text>
+            </Column>
+
+        </columns>
+        <items>
+            <ColumnListItem >
+            <cells><Text text="{comments}"></Text>
+                 <Text text="{type}"></Text>
+                <Text text="{Leave_status}"></Text>
+                <Text text="{ID}"></Text>
+                <Text text="{emp_id/employees}"></Text>
+            </cells>
+            </ColumnListItem>
+        </items>
+        
+
+
+
+    
+    </Table>
+    </Page>
+    
+    
+</mvc:View>
