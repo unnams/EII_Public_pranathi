@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@sap/cds-dk": "^9.4.3",
+    "sqlite3": "^5.1.7"
+  }
+}

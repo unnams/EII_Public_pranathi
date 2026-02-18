@@ -1,0 +1,41 @@
+<mvc:View xmlns:table2="sap.fe.macros.table" xmlns:table="sap.ui.mdc.table" controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    
+    <Table id="incident_table" visible="true" width="100%" items="{
+            path:'/Agent'
+         }" >   
+
+    <columns>
+      <Column >
+       <Text text="ID"></Text>
+
+    </Column>
+    <Column >
+        <Text text="first_name"></Text>
+    </Column>
+    <Column >
+        <Text text="last _name"></Text>
+    </Column>
+    </columns>
+    <items>
+        <ColumnListItem vAlign="Middle">
+            <cells>
+                <Text text="{emp_id}"></Text>
+                <Text text="{first_name}"></Text>
+                <Text text="{last_name}"></Text>
+                <!-- <Text text="{}"></Text>
+                <Text text="{phone}"></Text> -->
+               
+            </cells>
+        </ColumnListItem>
+    </items>
+    
+    
+    
+    </Table>
+    
+    
+    </Page>
+</mvc:View>
